@@ -10,7 +10,7 @@ namespace MauiApp2;
 {
     // === CONFIGURATION ===
         private const string RepoOwner = "kinguser981";
-        private const string RepoName = "Fortnite_Ping_Tester";
+        private const string RepoName = "Fortnite_DNS";
         private static readonly Version LocalVersion = new Version("1.1.0");
     // =====================
  
