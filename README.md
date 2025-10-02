@@ -1,1 +1,1 @@
-# it's a MAUI app for fortnite Players to find the best DNS server for lowest ping. and although You can find the best ping for For different location. You can check the packet loss. Or anything related to Fortnite.
+ it's a MAUI app for fortnite Players to find the best DNS server for lowest ping. and although You can find the best ping for For different location. You can check the packet loss. Or anything related to Fortnite.
