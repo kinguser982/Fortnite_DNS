@@ -48,7 +48,7 @@ FontFamily="Fortnitee"
                 HorizontalOptions="Center"
                 FontFamily="Fortnitee"
                 FontSize="19"
-                Text="To Download New  "
+                Text="To Download New "
                 >
                 
             </Label>

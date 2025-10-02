@@ -4,6 +4,9 @@
              x:Class="MauiApp2.AboutMe"
              BackgroundColor="#070F2B"
              Title="About Me!">
+
+    <StackLayout>
+    
     <VerticalStackLayout>
         <Label 
             Text="Hiya!"
@@ -41,14 +44,106 @@ HorizontalOptions="Center" />
      VerticalOptions="Center" 
      HorizontalOptions="Center" />
 
-        <Image
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="250"
-            Source="qq.png"
-            />
+       
 
+    
 
 
     </VerticalStackLayout>
+
+    <HorizontalStackLayout
+ Padding="1"
+ VerticalOptions="Center"
+ HorizontalOptions="Center"
+ >
+
+        <Label
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     FontFamily="Fortnitee"
+     FontSize="19"
+     Text="My "
+     >
+
+        </Label>
+
+        <Label
+     VerticalOptions="Center"
+     FontFamily="Fortnite"
+     FontSize="22"
+     HorizontalOptions="Center"
+     TextColor="LightGreen"
+     Text=" Github"      >
+
+            <Label.GestureRecognizers>
+
+                <TapGestureRecognizer
+             
+            Tapped="OnClicked"
+             
+            />
+            </Label.GestureRecognizers>
+
+
+        </Label>
+
+
+
+    </HorizontalStackLayout>
+
+        <HorizontalStackLayout
+Padding="1"
+VerticalOptions="Center"
+HorizontalOptions="Center"
+>
+
+            <Label
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+    FontFamily="Fortnitee"
+    FontSize="19"
+    Text="My "
+    >
+
+            </Label>
+
+            <Label
+    VerticalOptions="Center"
+    FontFamily="Fortnite"
+    FontSize="22"
+    HorizontalOptions="Center"
+    TextColor="red"
+    Text=" YouTube"      >
+
+                <Label.GestureRecognizers>
+
+                    <TapGestureRecognizer
+            
+           Tapped="OnClickedd"
+            
+           />
+                </Label.GestureRecognizers>
+
+
+            </Label>
+
+
+
+        </HorizontalStackLayout>
+
+
+        <VerticalStackLayout
+            Padding="9"
+            >
+        <Image
+           
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     WidthRequest="250"
+     Source="qq.png"
+            
+     />
+        </VerticalStackLayout>
+    </StackLayout>
+
 </ContentPage>

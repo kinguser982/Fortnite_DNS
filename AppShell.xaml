@@ -38,7 +38,7 @@
     </FlyoutItem>
 
 
-    <FlyoutItem Title="Cheak for New Version" Icon="rr.png">
+    <FlyoutItem Title="Check for New Version" Icon="rr.png">
         <ShellContent ContentTemplate="{DataTemplate local:CheakNewVersion}" />
     </FlyoutItem>
     
