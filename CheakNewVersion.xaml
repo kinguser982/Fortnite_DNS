@@ -35,13 +35,52 @@ TextColor="White"
 FontFamily="Fortnitee"
             
             />
-     
-        
+
+
+        <HorizontalStackLayout
+            Padding="15"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            >
+
+            <Label
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontFamily="Fortnitee"
+                FontSize="19"
+                Text="To Download New  "
+                >
+                
+            </Label>
+
+            <Label
+                VerticalOptions="Center"
+                FontFamily="Fortnite"
+                FontSize="22"
+                HorizontalOptions="Center"
+                TextColor="Aqua"
+                Text=" Release"      >
+
+                <Label.GestureRecognizers>
+
+                    <TapGestureRecognizer
+                        
+                        Tapped="OnClicked"
+                        
+                       />
+                </Label.GestureRecognizers>
+                  
+
+            </Label>
+
+           
+
+        </HorizontalStackLayout>
+
 
     </StackLayout>
 
-
-
-
+  
+ 
 
 </ContentPage>

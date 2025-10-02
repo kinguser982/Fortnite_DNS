@@ -53,7 +53,7 @@ namespace MauiApp2;
                     if (LocalVersion.CompareTo(latestGitHubVersion) < 0)
                     {
                     // Update available!
-                    mylab.Text = $" New version available: {latestGitHubVersion}!";
+                    mylab.Text = $"✨ New version available: {latestGitHubVersion}!";
 
                             
 
@@ -68,7 +68,7 @@ namespace MauiApp2;
                     else
                     {
                     // Already up to date
-                    mylab.Text = $" App is up to date ({LocalVersion}).";
+                    mylab.Text = $"✅ App is up to date ({LocalVersion}).";
                     }
                 }
                 else
@@ -85,9 +85,10 @@ namespace MauiApp2;
             }
         }
 
-
-
-
+    private async void OnClicked(object sender, TappedEventArgs e)
+    {
+        await Launcher.OpenAsync("https://github.com/kinguser981/Fortnite_DNS/releases");
+    }
 }
 
 
