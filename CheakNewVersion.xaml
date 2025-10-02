@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiApp2.CheakNewVersion"
+             BackgroundColor="#070F2B"
+             Title="Checking for New Version!">
+
+
+
+
+    <StackLayout Padding="30" Spacing="20">
+
+        <Image 
+            Source="bb.png"
+            HeightRequest="200"
+            Aspect="AspectFit"
+            HorizontalOptions="Center" />
+
+        <Label 
+            x:Name="mylab"
+            Text="Checking for updates..."
+            FontSize="25"
+            FontFamily="Fortnitee"
+            HorizontalOptions="Center" />
+
+        <Button 
+            Text="Check Now"
+            x:Name="btn1"
+            Clicked="OnCheckNowClicked"
+            HorizontalOptions="Center"
+            BackgroundColor="#535C91"
+FontSize="24"
+TextColor="White"
+FontFamily="Fortnitee"
+            
+            />
+     
+        
+
+    </StackLayout>
+
+
+
+
+
+</ContentPage>

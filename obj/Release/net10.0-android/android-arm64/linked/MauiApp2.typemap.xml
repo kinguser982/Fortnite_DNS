@@ -1,0 +1,8 @@
+<api type="release" assembly-name="MauiApp2" mvid="2060bbf6b92d4be9915bc412f70491da">
+  <module assembly-name="MauiApp2" mvid="2060bbf6b92d4be9915bc412f70491da" mvid-bytes="9rtgIC256UuRW8QS9wSR2g==">
+    <types-scratch>
+      <entry key="crc6452f1ea43b9adf718/MainActivity" java-name="crc6452f1ea43b9adf718/MainActivity" managed-type-name="MauiApp2.MainActivity" token="33554509" />
+      <entry key="crc6452f1ea43b9adf718/MainApplication" java-name="crc6452f1ea43b9adf718/MainApplication" managed-type-name="MauiApp2.MainApplication" token="33554510" />
+    </types-scratch>
+  </module>
+</api>

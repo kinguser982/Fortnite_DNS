@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiApp2.SinglePingTest"
+             BackgroundColor="#070F2B"
+             >
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20" RowSpacing="10">
+
+        <StackLayout Margin="10" 
+                   Grid.Row="0"
+                   >
+
+
+   <Picker
+    x:Name="RegionPicker"
+    AutomationProperties.HelpText="Select your region from the list"
+    BackgroundColor="Transparent"
+    FlowDirection="LeftToRight"
+    StyleClass="PickerStyle"
+    Title="Choose your region !" 
+    FontAttributes="Bold"
+    FontFamily="Fortnitee"
+    TextColor="Green"
+    FontSize="25"
+    Margin="10"
+    SelectedItem="pickerselected"/>
+
+            <Button 
+             Grid.Row="1"
+             Text="Start 50-Ping Test"
+             FontFamily="Fortnite"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             FontSize="20"
+             TextColor="Black"
+             Clicked="OnStartPingTestClicked"
+             x:Name="pinkbut"
+             Margin="10"
+                           />
+
+
+        </StackLayout>
+
+
+        <ScrollView 
+          Grid.Row="1"
+                  VerticalOptions="Fill"
+                  HorizontalOptions="Fill"
+                  HorizontalScrollBarVisibility="Always"
+                  >
+            <Label 
+              x:Name="PingResultsLabel"
+              Text="Press the button to start the ping test"
+              FontFamily="monospace"
+              TextColor="#00FF00"
+              FontSize="12"
+              VerticalOptions="Fill"
+              HorizontalOptions="Fill" />
+        </ScrollView>
+
+        <ActivityIndicator 
+          Grid.Row="2"
+          x:Name="ActivityIndicator" 
+          Color="red"
+          IsRunning="False" 
+           />
+
+    </Grid>
+</ContentPage>

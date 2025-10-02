@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp2"
+    BackgroundColor="#070F2B"
+    FlyoutBehavior="Flyout"
+    >
+
+    
+    <Shell.FlyoutBackgroundColor>
+        <Color>#1B1A55</Color>
+    </Shell.FlyoutBackgroundColor>
+    
+    
+    <Shell.FlyoutHeader>
+        <Image Source="ff.png" Aspect="AspectFill" HeightRequest="150"
+               
+               
+               />
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Image Source="aa.png" Aspect="Fill" HeightRequest="150"
+               
+               
+               />
+    </Shell.FlyoutFooter>
+
+    <FlyoutItem Title="DNS Finder" Icon="ee.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+    
+
+    <FlyoutItem Title="SinglePingTest" Icon="tt.png">
+        <ShellContent ContentTemplate="{DataTemplate local:SinglePingTest}" />
+    </FlyoutItem>
+
+
+    <FlyoutItem Title="Cheak for New Version" Icon="rr.png">
+        <ShellContent ContentTemplate="{DataTemplate local:CheakNewVersion}" />
+    </FlyoutItem>
+    
+    
+    <FlyoutItem Title="About Me!" Icon="dd.png">
+        <ShellContent ContentTemplate="{DataTemplate local:AboutMe}" />
+    </FlyoutItem>
+
+
+</Shell>

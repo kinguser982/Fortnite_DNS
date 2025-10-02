@@ -1,0 +1,8 @@
+<api type="release" assembly-name="Xamarin.AndroidX.AppCompat.AppCompatResources" mvid="379f4e42a8da48ca89faf380f0e2a886">
+  <module assembly-name="Xamarin.AndroidX.AppCompat.AppCompatResources" mvid="379f4e42a8da48ca89faf380f0e2a886" mvid-bytes="Qk6fN9qoykiJ+vOA8OKohg==">
+    <types-scratch>
+      <entry key="androidx/appcompat/content/res/AppCompatResources" java-name="androidx/appcompat/content/res/AppCompatResources" managed-type-name="AndroidX.AppCompat.Content.Res.AppCompatResources" token="33554440" />
+      <entry key="androidx/appcompat/graphics/drawable/DrawableWrapperCompat" java-name="androidx/appcompat/graphics/drawable/DrawableWrapperCompat" managed-type-name="AndroidX.AppCompat.Graphics.Drawable.DrawableWrapperCompat" token="33554441" />
+    </types-scratch>
+  </module>
+</api>
