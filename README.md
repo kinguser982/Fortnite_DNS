@@ -17,8 +17,15 @@
 
 # Features
 ```
+- Powered by .NET Multi-platform App UI
+- Open source
+- so fast
+- u can compile it for Mac and ios
+- now it's only available for Android and Widows
+
 
 ```
+
 
 
 ## Requirements 
@@ -27,8 +34,12 @@ https://dotnet.microsoft.com/en-us/download/dotnet/10.0
 
 
 
+
+
 ## Download 
 Can be downloaded at [Release](../../releases)
+
+
 
 
 
