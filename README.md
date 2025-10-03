@@ -1,5 +1,5 @@
-# it's an App for fortnite Players to find the best DNS server for lowest ping .
-and although You can find the best DNS for For different location. You can check the packet loss. Or anything related to Fortnite.
+# it's an App for fortnite Players to find the best DNS server for lowest ping,
+## and although You can find the best DNS for For different location. You can check the packet loss. Or anything related to Fortnite.
 
 ## Release Notes
 ```
