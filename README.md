@@ -21,7 +21,7 @@
 - Open source
 - so fast
 - u can compile it for Mac and ios
-- now it's only available for Android and Widows
+- now it's only available for Android and Windows
 
 
 ```
