@@ -45,9 +45,9 @@ Can be downloaded at [Release](../../releases)
 
 
 ## Reference and Credits
-- 
-- 
-- 
-- 
-- 
+-  Me.Dev (Sam)
+- .NET Multi-platform App UI
+- Gemini.Google
+- Millie as Tester in Europe 
+- Epic Games for links and Fortnite
 - 
