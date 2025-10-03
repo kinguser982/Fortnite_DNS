@@ -1,3 +1,5 @@
+
+
 namespace MauiApp2;
 
 public partial class AboutMe : ContentPage
@@ -17,6 +19,12 @@ public partial class AboutMe : ContentPage
         await Launcher.OpenAsync("https://www.youtube.com/@help-me-sam");
     }
 
+    private async void OnEmailTapped(object sender, EventArgs e)
+    {
 
+
+        await Launcher.OpenAsync("mailto:kinguser981@gmail.com");
+ 
+    }
 
 }

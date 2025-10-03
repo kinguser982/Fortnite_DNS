@@ -31,9 +31,9 @@
     <FlyoutItem Title="DNS Finder" Icon="ee.png">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
-    
 
-    <FlyoutItem Title="SinglePingTest" Icon="tt.png">
+
+    <FlyoutItem Title="Ping and Packet Lost" Icon="tt.png">
         <ShellContent ContentTemplate="{DataTemplate local:SinglePingTest}" />
     </FlyoutItem>
 

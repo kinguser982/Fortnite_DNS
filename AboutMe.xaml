@@ -40,16 +40,34 @@ HorizontalOptions="Center" />
             FontFamily="Fortnitee"
      HorizontalOptions="Center" />
         <Label 
-     Text=""
+     Text=" "
      VerticalOptions="Center" 
      HorizontalOptions="Center" />
+        
+            <Label 
+                FontFamily="Fortnitee"
+                FontSize="19"
+                TextColor="AliceBlue"
+                TextDecorations="Underline"
+                Text="My Email : KingUser981@gmail.com"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnEmailTapped" />
+                </Label.GestureRecognizers>
+            </Label>
 
-       
-
-    
 
 
-    </VerticalStackLayout>
+
+            <Label 
+ Text=" "
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+
+
+        </VerticalStackLayout>
 
     <HorizontalStackLayout
  Padding="1"

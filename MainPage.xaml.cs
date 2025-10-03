@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Text.RegularExpressions;
 
 
 
@@ -20,9 +21,7 @@ namespace MauiApp2
             InitializeComponent();
             
             Application.Current.UserAppTheme = AppTheme.Dark;
-
-            // Set the ListView's ItemsSource property once in the constructor.
-            // All future additions to the dnsResults collection will update the ListView.
+   
             MyListView.ItemsSource = dnsResults;
 
 
@@ -40,7 +39,7 @@ namespace MauiApp2
 
         };
 
-            // 2. Assign the list to the Picker's ItemsSource
+          
             
             RegionPicker.ItemsSource = RegionList;
             RegionPicker.SelectedIndexChanged += OnRegionPickerSelectedIndexChanged;    
@@ -98,9 +97,6 @@ namespace MauiApp2
 
 
             string hostnameToTest = PingRegion;
-
-            //string hostnameToTest = "ping-me.ds.on.epicgames.com";
-
 
             var dnsServers = new Dictionary<string, IPAddress>
             {
@@ -168,7 +164,7 @@ namespace MauiApp2
   { "Electro 1", IPAddress.Parse("78.157.42.100") },
   { "Electro 2", IPAddress.Parse("78.157.42.101") },
   { "DNS 85", IPAddress.Parse("15.197.238.60") },
-  { "DNS 86", IPAddress.Parse("3.33.242.199") }
+  { "The Last DNS", IPAddress.Parse("3.33.242.199") }
             
 
 
@@ -200,15 +196,13 @@ namespace MauiApp2
                                 resultString = $"{server.Key} ({server.Value}) - Ping Failed: {reply.Status}";
                             }
                             
-
                                 dnsResults.Add(resultString);
-
                         }
                         
                     }
                     else
                     {
-                        Task.Delay(6000).ContinueWith(t =>
+                        Task.Delay(8000).ContinueWith(t =>
                         {
                             SelectedItemLabel.Text = " Done!";
                         }, TaskScheduler.FromCurrentSynchronizationContext());
@@ -243,8 +237,11 @@ namespace MauiApp2
             // Get the selected item, which is a string in your case
             string selectedItemText = (string)e.SelectedItem;
 
+            var extractor = new StringExtractor();
+
+            string extractedContent = extractor.ExtractContentInParentheses(selectedItemText);
             // Use the Clipboard to copy the text.
-             Clipboard.Default.SetTextAsync(selectedItemText);
+            Clipboard.Default.SetTextAsync(extractedContent);
 
             // Display a confirmation alert.
             DisplayAlert("Copied", "The DNS has been copied to the clipboard.", "OK");
@@ -254,13 +251,31 @@ namespace MauiApp2
 
         }
 
-
- 
-
-
         private void MyListView_ItemAppearing(object sender, ItemVisibilityEventArgs e)
         {
 
+        }
+    }
+
+
+    public class StringExtractor
+    {
+       
+        public string ExtractContentInParentheses(string input)
+        {
+   
+            const string pattern = @"\((.*?)\)";
+
+            Match match = Regex.Match(input, pattern);
+
+           
+            if (match.Success && match.Groups.Count > 1)
+            {
+                
+                return match.Groups[1].Value;
+            }
+
+            return string.Empty; 
         }
     }
 }

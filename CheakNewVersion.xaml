@@ -59,7 +59,7 @@ FontFamily="Fortnitee"
                 FontSize="22"
                 HorizontalOptions="Center"
                 TextColor="Aqua"
-                Text=" Release"      >
+                Text=" Release!"      >
 
                 <Label.GestureRecognizers>
 
