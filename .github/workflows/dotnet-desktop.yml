@@ -69,7 +69,9 @@ jobs:
 
     # Install the .NET Core workload
     - name: Install .NET 10
-      run: winget install "Microsoft.DotNet.SDK.Preview"
+      run: | 
+          winget install "Microsoft.DotNet.SDK.Preview"
+          echo Yes
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
